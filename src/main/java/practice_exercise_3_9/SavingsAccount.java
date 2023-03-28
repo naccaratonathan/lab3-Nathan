@@ -17,7 +17,7 @@ public class SavingsAccount {
         this.intRate = intRate;
     }
 
-    public double getBalance() {
+    public double getBal() {
         return bal;
     }
 

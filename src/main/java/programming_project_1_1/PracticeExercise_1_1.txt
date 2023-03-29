@@ -16,5 +16,5 @@ Then to get your maintenance cost you, multiply the distance by the maintenance 
  Add the maintenance and the total gas cost for the total upkeep of the car
  Then compare the total car price to train ticket price
 
-if car price is lower print out take the car
+if car price is lower than train ticket print out take the car
 else print to take the train

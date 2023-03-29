@@ -6,6 +6,11 @@ package programming_project_3_13;
 */
 public class BankAccount
 {
+
+   private double deductMonthlyCharge;
+
+   private int transactionCount;
+   private int free;
    private double transactionFee;
    private double balance;
 
@@ -21,11 +26,12 @@ public class BankAccount
       Constructs a bank account with a given balance.
       @param initialBalance the initial balance
    */
-   public BankAccount(double initialBalance, double transactionFee)
+   public BankAccount(double initialBalance, double transactionFee, int free)
    {   
 
       balance = initialBalance;
       this.transactionFee = transactionFee;
+      this.free = free;
    }
 
    /**
@@ -33,9 +39,13 @@ public class BankAccount
       @param amount the amount to deposit
    */
    public void deposit(double amount)
-   {  
+   {
       balance = balance + amount;
-      balance = balance - transactionFee;
+      if (free<=0){
+         deductMonthlyCharge+=transactionFee;
+
+      }
+      free --;
    }
 
    /**
@@ -45,8 +55,15 @@ public class BankAccount
    public void withdraw(double amount)
    {   
       balance = balance - amount;
-      balance = balance - transactionFee;
+
+      if (free<=0){
+         deductMonthlyCharge+=transactionFee;
+      }
+
+      free --;
    }
+
+
 
    /**
       Gets the current balance of the bank account.

@@ -18,3 +18,8 @@ Then to get your maintenance cost you, multiply the distance by the maintenance 
 
 if car price is lower than train ticket print out take the car
 else print to take the train
+
+
+
+
+

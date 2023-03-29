@@ -5,7 +5,7 @@ import practice_exercise_3_9.SavingsAccount;
 public class BankAccountTester {
 
     public static void main(String[] args) {
-        BankAccount account = new BankAccount(1000, 10);
+        BankAccount account = new BankAccount(1000, 10, 0);
         account.deposit(1000);
         account.withdraw(1000);
         System.out.println("Expected: 980.0");

@@ -5,7 +5,8 @@ package programming_project_3_13;
    deposits and withdrawals.
 */
 public class BankAccount
-{  
+{
+   private double transactionFee;
    private double balance;
 
    /**
@@ -20,9 +21,11 @@ public class BankAccount
       Constructs a bank account with a given balance.
       @param initialBalance the initial balance
    */
-   public BankAccount(double initialBalance)
+   public BankAccount(double initialBalance, double transactionFee)
    {   
+
       balance = initialBalance;
+      this.transactionFee = transactionFee;
    }
 
    /**
@@ -32,6 +35,7 @@ public class BankAccount
    public void deposit(double amount)
    {  
       balance = balance + amount;
+      balance = balance - transactionFee;
    }
 
    /**
@@ -41,6 +45,7 @@ public class BankAccount
    public void withdraw(double amount)
    {   
       balance = balance - amount;
+      balance = balance - transactionFee;
    }
 
    /**
@@ -52,4 +57,6 @@ public class BankAccount
       return balance;
    }
 }
+
+
 

@@ -7,3 +7,14 @@ Write an algorithm to decide which commute is cheaper.
 Your answer in pseudocode below:
 
 
+Create a variable for the distance from home to work
+Fuel efficiency in miles per gallon
+Create a variable for train ticket
+To calculate the number of gallons needed to get to work, divide the distance by miles per gallon
+Then to get your maintenance cost you, multiply the distance by the maintenance cost per mile
+ To get total gas cost you would  multiply the gallons by the cost of gas
+ Add the maintenance and the total gas cost for the total upkeep of the car
+ Then compare the total car price to train ticket price
+
+if car price is lower print out take the car
+else print to take the train

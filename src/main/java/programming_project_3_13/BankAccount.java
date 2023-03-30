@@ -6,10 +6,6 @@ package programming_project_3_13;
 */
 public class BankAccount
 {
-
-   private double deductMonthlyCharge;
-
-   private int transactionCount;
    private int free;
    private double transactionFee;
    private double balance;

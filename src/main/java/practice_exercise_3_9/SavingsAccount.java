@@ -32,5 +32,4 @@ public class SavingsAccount {
         double interest = bal * intRate / 100;
         bal += interest;
     }
-
 }

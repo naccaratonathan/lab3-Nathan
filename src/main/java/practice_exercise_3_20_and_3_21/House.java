@@ -19,8 +19,8 @@ public class House {
         Rectangle houseDoor = new Rectangle(x + (width / 2), y + (height / 2), width/4, height/2);
 
         // Roof
-        gDraw.drawLine(x, y, x + (width /4), y - (height / 2));
-        gDraw.drawLine(x + width, y, x + (width / 4), y - (height /2));
+        gDraw.drawLine(x, y, x + (width /2), y - (height / 2));
+        gDraw.drawLine(x + width, y, x + (width / 2), y - (height /2));
 
         gDraw.draw(houseWalls);
         gDraw.draw(houseWindow);

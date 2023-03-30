@@ -41,26 +41,24 @@ public class BankAccount
    public void deposit(double amount)
    {
       balance = balance + amount;
-      if (free<=0){
-         deductMonthlyCharge+=transactionFee;
-
+      for (int i = 0; i < (free <= 0 ? 1 : 0); i++){
+         balance -= transactionFee;
       }
-      free --;
+      free--;
    }
+
 
    /**
       Withdraws money from the bank account.
       @param amount the amount to withdraw
    */
    public void withdraw(double amount)
-   {   
+   {
       balance = balance - amount;
-
-      if (free<=0){
-         deductMonthlyCharge+=transactionFee;
+      for (int i = 0; i < (free <= 0 ? 1 : 0); i++){
+         balance -= transactionFee;
       }
-
-      free --;
+      free--;
    }
 
 
